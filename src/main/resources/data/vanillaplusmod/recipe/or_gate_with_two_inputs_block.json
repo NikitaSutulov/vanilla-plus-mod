@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "I": {
+      "item": "minecraft:stone"
+    },
+    "X": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "pattern": [
+    " X ",
+    "XIX"
+  ],
+  "result": {
+    "count": 1,
+    "id": "vanillaplusmod:or_gate_with_two_inputs_block"
+  }
+}

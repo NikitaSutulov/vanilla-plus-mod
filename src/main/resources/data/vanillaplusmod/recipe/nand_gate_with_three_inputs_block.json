@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "#": {
+      "item": "minecraft:redstone_torch"
+    },
+    "I": {
+      "item": "vanillaplusmod:nand_gate_with_two_inputs_block"
+    }
+  },
+  "pattern": [
+    "I",
+    "#"
+  ],
+  "result": {
+    "count": 1,
+    "id": "vanillaplusmod:nand_gate_with_three_inputs_block"
+  }
+}
