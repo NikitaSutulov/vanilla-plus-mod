@@ -1,5 +1,7 @@
 package com.nickytoolchick.vanillaplus;
 
+import com.nickytoolchick.vanillaplus.block.ModBlocks;
+import com.nickytoolchick.vanillaplus.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -11,6 +13,7 @@ public class VanillaPlusMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
+		ModBlocks.registerBlocks();
+		ModItems.registerModItems();
 	}
 }

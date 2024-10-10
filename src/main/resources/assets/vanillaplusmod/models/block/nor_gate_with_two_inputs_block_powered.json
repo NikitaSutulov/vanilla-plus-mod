@@ -1,0 +1,23 @@
+{
+  "parent": "block/thin",
+  "textures": {
+    "particle": "vanillaplusmod:block/nor_gate_with_two_inputs_block_powered",
+    "top": "vanillaplusmod:block/nor_gate_with_two_inputs_block_powered",
+    "bottom": "block/smooth_stone",
+    "side": "block/smooth_stone"
+  },
+  "elements": [
+    {
+      "from": [0, 0, 0],
+      "to": [16, 2, 16],
+      "faces": {
+        "north": { "texture": "#side", "uv": [0, 14, 16, 16] },
+        "east": { "texture": "#side", "uv": [0, 14, 16, 16] },
+        "south": { "texture": "#side", "uv": [0, 14, 16, 16] },
+        "west": { "texture": "#side", "uv": [0, 14, 16, 16] },
+        "up": { "texture": "#top", "uv": [16, 16, 0, 0] },
+        "down": { "texture": "#bottom", "uv": [0, 0, 16, 16] }
+      }
+    }
+  ]
+}

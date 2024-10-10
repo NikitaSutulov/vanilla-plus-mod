@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "vanillaplusmod:block/and_gate_with_two_inputs_block"
+  }
+}
