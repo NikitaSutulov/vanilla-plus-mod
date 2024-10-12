@@ -67,7 +67,7 @@ public abstract class AbstractLogicGateBlock extends Block {
 
     @Override
     public int getStrongRedstonePower(BlockState state, BlockView world, BlockPos pos, Direction direction) {
-        return state.get(POWERED) && direction == state.get(FACING) ? 15 : 0;
+        return getWeakRedstonePower(state, world, pos, direction);
     }
 
     @Override

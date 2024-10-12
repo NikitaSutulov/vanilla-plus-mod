@@ -1,6 +1,7 @@
 package com.nickytoolchick.vanillaplus.block;
 
 import com.nickytoolchick.vanillaplus.VanillaPlusMod;
+import com.nickytoolchick.vanillaplus.block.clocks.*;
 import com.nickytoolchick.vanillaplus.block.gates.*;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
@@ -93,6 +94,13 @@ public class ModBlocks {
                     .sounds(BlockSoundGroup.STONE)
                     .pistonBehavior(PistonBehavior.DESTROY)));
 
+    public static final Block REDSTONE_CLOCK_BLOCK = registerBlock("redstone_clock_block",
+            new RedstoneClockBlock(AbstractBlock.Settings.create()
+                    .breakInstantly()
+                    .sounds(BlockSoundGroup.STONE)
+                    .pistonBehavior(PistonBehavior.DESTROY)
+                    .nonOpaque()));
+
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, Identifier.of(VanillaPlusMod.MOD_ID, name), block);
@@ -120,6 +128,7 @@ public class ModBlocks {
             entries.add(XNOR_GATE_WITH_TWO_INPUTS_BLOCK);
             entries.add(XOR_GATE_WITH_THREE_INPUTS_BLOCK);
             entries.add(XOR_GATE_WITH_TWO_INPUTS_BLOCK);
+            entries.add(REDSTONE_CLOCK_BLOCK);
         });
     }
 }

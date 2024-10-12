@@ -1,0 +1,42 @@
+{
+  "ambientocclusion": false,
+  "textures": {
+    "particle": "vanillaplusmod:block/redstone_clock_block_powered",
+    "slab": "block/smooth_stone",
+    "top": "vanillaplusmod:block/redstone_clock_block_powered",
+    "lit": "block/redstone_torch"
+  },
+  "elements": [
+    {   "from": [ 0, 0, 0 ],
+      "to": [ 16, 2, 16 ],
+      "faces": {
+        "down":  { "uv": [ 0,  0, 16, 16 ], "texture": "#slab", "cullface": "down" },
+        "up":    { "uv": [ 16,  16, 0, 0 ], "texture": "#top" },
+        "north": { "uv": [ 0, 14, 16, 16 ], "texture": "#slab", "cullface": "north" },
+        "south": { "uv": [ 0, 14, 16, 16 ], "texture": "#slab", "cullface": "south" },
+        "west":  { "uv": [ 0, 14, 16, 16 ], "texture": "#slab", "cullface": "west" },
+        "east":  { "uv": [ 0, 14, 16, 16 ], "texture": "#slab", "cullface": "east" }
+      }
+    },
+    {   "from": [ 9, 7, 2 ],
+      "to": [ 11, 7, 4 ],
+      "faces": {
+        "up":   { "uv": [ 7, 6, 9, 8 ], "texture": "#lit" }
+      }
+    },
+    {   "from": [ 9, 2, 1 ],
+      "to": [ 11, 8, 5 ],
+      "faces": {
+        "west": { "uv": [ 6, 5, 10, 11 ], "texture": "#lit" },
+        "east": { "uv": [ 6, 5, 10, 11 ], "texture": "#lit" }
+      }
+    },
+    {   "from": [ 8, 2, 2 ],
+      "to": [ 12, 8, 4 ],
+      "faces": {
+        "north": { "uv": [ 6, 5, 10, 11 ], "texture": "#lit" },
+        "south": { "uv": [ 6, 5, 10, 11 ], "texture": "#lit" }
+      }
+    }
+  ]
+}

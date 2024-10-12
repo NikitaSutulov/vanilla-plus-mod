@@ -20,6 +20,9 @@
 		],
 		"fabric-datagen": [
 			"com.nickytoolchick.vanillaplus.VanillaPlusModDataGenerator"
+		],
+		"client": [
+			"com.nickytoolchick.vanillaplus.VanillaPlusModClient"
 		]
 	},
 	"mixins": [

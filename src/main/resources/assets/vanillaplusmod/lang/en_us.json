@@ -11,5 +11,6 @@
   "block.vanillaplusmod.xnor_gate_with_three_inputs_block": "XNOR Gate with 3 inputs",
   "block.vanillaplusmod.xnor_gate_with_two_inputs_block": "XNOR Gate with 2 inputs",
   "block.vanillaplusmod.xor_gate_with_three_inputs_block": "XOR Gate with 3 inputs",
-  "block.vanillaplusmod.xor_gate_with_two_inputs_block": "XOR Gate with 2 inputs"
+  "block.vanillaplusmod.xor_gate_with_two_inputs_block": "XOR Gate with 2 inputs",
+  "block.vanillaplusmod.redstone_clock_block": "Redstone Clock"
 }
