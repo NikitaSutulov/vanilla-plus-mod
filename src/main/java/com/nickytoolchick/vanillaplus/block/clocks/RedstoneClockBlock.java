@@ -26,13 +26,15 @@ public class RedstoneClockBlock extends Block {
     public static final BooleanProperty POWERED = Properties.POWERED;
     public static final IntProperty DELAY = IntProperty.of("delay", 1, 4);
     public static final IntProperty TICK_COUNTER = IntProperty.of("tick_counter", 0, 7);
+    public static final BooleanProperty ACTIVE = BooleanProperty.of("active");
 
     public RedstoneClockBlock(Settings settings) {
         super(settings);
         this.setDefaultState(this.stateManager.getDefaultState()
+                .with(ACTIVE, false)
+                .with(DELAY, 1)
                 .with(FACING, Direction.NORTH)
                 .with(POWERED, false)
-                .with(DELAY, 1)
                 .with(TICK_COUNTER, 0)
         );
     }
@@ -41,7 +43,7 @@ public class RedstoneClockBlock extends Block {
     public void onBlockAdded(BlockState state, World world, BlockPos pos, BlockState oldState, boolean notify) {
         super.onBlockAdded(state, world, pos, oldState, notify);
         if (!world.isClient) {
-            world.getBlockTickScheduler().scheduleTick(OrderedTick.create(this, pos));
+            updateActivity(state, world, pos);
         }
     }
 
@@ -57,7 +59,7 @@ public class RedstoneClockBlock extends Block {
 
     @Override
     protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
-        builder.add(DELAY, FACING, POWERED, TICK_COUNTER);
+        builder.add(ACTIVE, DELAY, FACING, POWERED, TICK_COUNTER);
     }
 
     @Override
@@ -87,6 +89,9 @@ public class RedstoneClockBlock extends Block {
 
     @Override
     public void scheduledTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
+        if (!state.get(ACTIVE)) {
+            return;
+        }
         int currentTickInterval = state.get(DELAY) * 2;
         int tickCounter = state.get(TICK_COUNTER);
 
@@ -99,6 +104,31 @@ public class RedstoneClockBlock extends Block {
             world.setBlockState(pos, state.with(TICK_COUNTER, tickCounter), 3);
         }
 
-        world.getBlockTickScheduler().scheduleTick(OrderedTick.create(this, pos));
+        if (state.get(ACTIVE)) {
+            world.getBlockTickScheduler().scheduleTick(OrderedTick.create(this, pos));
+        }
+    }
+
+    @Override
+    protected void neighborUpdate(BlockState state, World world, BlockPos pos, Block sourceBlock, BlockPos sourcePos, boolean notify) {
+        super.neighborUpdate(state, world, pos, sourceBlock, sourcePos, notify);
+        updateActivity(state, world, pos);
+    }
+
+    private void updateActivity(BlockState state, World world, BlockPos pos) {
+        Direction facing = state.get(FACING);
+        boolean isInputPositive = world.getEmittedRedstonePower(pos.offset(facing), facing) > 0;
+
+        if (state.get(ACTIVE) != isInputPositive) {
+            world.setBlockState(pos, state.with(ACTIVE, isInputPositive), 3);
+            world.updateNeighborsAlways(pos, this);
+            if (isInputPositive) {
+                world.getBlockTickScheduler().scheduleTick(OrderedTick.create(this, pos));
+            }
+        }
+
+        if (!isInputPositive && (state.get(POWERED) || state.get(TICK_COUNTER) != 0)) {
+            world.setBlockState(pos, state.with(POWERED, false).with(TICK_COUNTER, 0), 3);
+        }
     }
 }
