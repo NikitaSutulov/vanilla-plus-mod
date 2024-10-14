@@ -12,5 +12,11 @@
   "block.vanillaplusmod.xnor_gate_with_two_inputs_block": "XNOR Gate with 2 inputs",
   "block.vanillaplusmod.xor_gate_with_three_inputs_block": "XOR Gate with 3 inputs",
   "block.vanillaplusmod.xor_gate_with_two_inputs_block": "XOR Gate with 2 inputs",
-  "block.vanillaplusmod.redstone_clock_block": "Redstone Clock"
+  "block.vanillaplusmod.redstone_clock_block": "Redstone Clock",
+  "item.vanillaplusmod.wooden_dagger": "Wooden Dagger",
+  "item.vanillaplusmod.stone_dagger": "Stone Dagger",
+  "item.vanillaplusmod.golden_dagger": "Golden Dagger",
+  "item.vanillaplusmod.iron_dagger": "Iron Dagger",
+  "item.vanillaplusmod.diamond_dagger": "Diamond Dagger",
+  "item.vanillaplusmod.netherite_dagger": "Netherite Dagger"
 }

@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "vanillaplusmod:diamond_dagger",
+    "vanillaplusmod:stone_dagger",
+    "vanillaplusmod:golden_dagger",
+    "vanillaplusmod:netherite_dagger",
+    "vanillaplusmod:wooden_dagger",
+    "vanillaplusmod:iron_dagger"
+  ]
+}
