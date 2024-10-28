@@ -1,6 +1,7 @@
 package com.nickytoolchick.vanillaplus;
 
 import com.nickytoolchick.vanillaplus.block.ModBlocks;
+import com.nickytoolchick.vanillaplus.command.ModCommands;
 import com.nickytoolchick.vanillaplus.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -15,5 +16,6 @@ public class VanillaPlusMod implements ModInitializer {
 	public void onInitialize() {
 		ModBlocks.registerBlocks();
 		ModItems.registerModItems();
+		ModCommands.registerCommands();
 	}
 }
