@@ -3,9 +3,9 @@ package com.nickytoolchick.vanillaplus.block;
 import com.nickytoolchick.vanillaplus.VanillaPlusMod;
 import com.nickytoolchick.vanillaplus.block.clocks.*;
 import com.nickytoolchick.vanillaplus.block.gates.*;
+import com.nickytoolchick.vanillaplus.world.ModConfiguredFeatures;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
+import net.minecraft.block.*;
 import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -14,6 +14,8 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
+
+import java.util.Optional;
 
 public class ModBlocks {
     public static final Block AND_GATE_WITH_THREE_INPUTS_BLOCK = registerBlock("and_gate_with_three_inputs_block",
@@ -101,6 +103,35 @@ public class ModBlocks {
                     .pistonBehavior(PistonBehavior.DESTROY)
                     .nonOpaque()));
 
+    public static final Block APPLE_LOG = registerBlock("apple_log",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_LOG).strength(4f)));
+    public static final Block APPLE_WOOD = registerBlock("apple_wood",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_WOOD).strength(4f)));
+    public static final Block STRIPPED_APPLE_LOG = registerBlock("stripped_apple_log",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_OAK_LOG).strength(4f)));
+    public static final Block STRIPPED_APPLE_WOOD = registerBlock("stripped_apple_wood",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_OAK_WOOD).strength(4f)));
+    public static final Block APPLE_PLANKS = registerBlock("apple_planks",
+            new Block(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS).strength(4f)));
+    public static final Block APPLE_LEAVES = registerBlock("apple_leaves",
+            new LeavesBlock(AbstractBlock.Settings.copy(Blocks.OAK_LEAVES).nonOpaque()));
+    public static final Block APPLE_SAPLING = registerBlock("apple_sapling",
+            new SaplingBlock(
+                    new SaplingGenerator(
+                            Identifier.of(VanillaPlusMod.MOD_ID, "apple_tree").toString(),
+                            0.1F,
+                            Optional.empty(),
+                            Optional.empty(),
+                            Optional.of(ModConfiguredFeatures.APPLE_TREE_KEY),
+                            Optional.empty(),
+                            Optional.empty(),
+                            Optional.empty()
+                    ),
+//                    SaplingGenerator.OAK,
+                    AbstractBlock.Settings.copy(Blocks.OAK_SAPLING)
+            )
+    );
+
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, Identifier.of(VanillaPlusMod.MOD_ID, name), block);
@@ -129,6 +160,16 @@ public class ModBlocks {
             entries.add(XOR_GATE_WITH_THREE_INPUTS_BLOCK);
             entries.add(XOR_GATE_WITH_TWO_INPUTS_BLOCK);
             entries.add(REDSTONE_CLOCK_BLOCK);
+        });
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(entries -> {
+            entries.add(APPLE_LOG);
+            entries.add(APPLE_WOOD);
+            entries.add(APPLE_PLANKS);
+            entries.add(APPLE_LEAVES);
+            entries.add(STRIPPED_APPLE_LOG);
+            entries.add(STRIPPED_APPLE_WOOD);
+            entries.add(APPLE_SAPLING);
         });
     }
 }
