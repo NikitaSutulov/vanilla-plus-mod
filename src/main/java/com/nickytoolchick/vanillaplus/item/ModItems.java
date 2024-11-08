@@ -2,6 +2,7 @@ package com.nickytoolchick.vanillaplus.item;
 
 import com.nickytoolchick.vanillaplus.VanillaPlusMod;
 import com.nickytoolchick.vanillaplus.item.custom.DaggerItem;
+import com.nickytoolchick.vanillaplus.item.custom.FireballLauncherItem;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -42,6 +43,9 @@ public class ModItems {
             new DaggerItem(ToolMaterials.NETHERITE, new Item.Settings().attributeModifiers(DaggerItem.createAttributeModifiers(ToolMaterials.NETHERITE, 1, -1F)))
     );
 
+    private static final Item FIREBALL_LAUNCHER = registerItem("fireball_launcher",
+            new FireballLauncherItem(new Item.Settings().maxDamage(384).maxCount(1)));
+
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(VanillaPlusMod.MOD_ID, name), item);
     }
@@ -56,6 +60,7 @@ public class ModItems {
             entries.add(IRON_DAGGER);
             entries.add(DIAMOND_DAGGER);
             entries.add(NETHERITE_DAGGER);
+            entries.add(FIREBALL_LAUNCHER);
         });
     }
 }

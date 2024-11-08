@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "minecraft:gunpowder"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "X": {
+      "item": "minecraft:blaze_rod"
+    }
+  },
+  "pattern": [
+    "I I",
+    "I#I",
+    " X "
+  ],
+  "result": {
+    "count": 1,
+    "id": "vanillaplusmod:fireball_launcher"
+  }
+}
