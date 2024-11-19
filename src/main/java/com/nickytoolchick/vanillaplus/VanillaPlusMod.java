@@ -2,6 +2,8 @@ package com.nickytoolchick.vanillaplus;
 
 import com.nickytoolchick.vanillaplus.block.ModBlocks;
 import com.nickytoolchick.vanillaplus.command.ModCommands;
+import com.nickytoolchick.vanillaplus.enchantment.ModEnchantments;
+import com.nickytoolchick.vanillaplus.event.TreeCapitatorEvent;
 import com.nickytoolchick.vanillaplus.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
@@ -18,6 +20,9 @@ public class VanillaPlusMod implements ModInitializer {
 		ModBlocks.registerBlocks();
 		ModItems.registerModItems();
 		ModCommands.registerCommands();
+		ModEnchantments.initialize();
+
+		TreeCapitatorEvent.register();
 
 		StrippableBlockRegistry.register(ModBlocks.APPLE_LOG, ModBlocks.STRIPPED_APPLE_LOG);
 		StrippableBlockRegistry.register(ModBlocks.APPLE_WOOD, ModBlocks.STRIPPED_APPLE_WOOD);
