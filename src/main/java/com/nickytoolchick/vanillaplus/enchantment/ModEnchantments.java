@@ -10,5 +10,8 @@ public class ModEnchantments {
     public static final RegistryKey<Enchantment> TREE_CAPITATOR =
             RegistryKey.of(RegistryKeys.ENCHANTMENT, Identifier.of(VanillaPlusMod.MOD_ID, "tree_capitator"));
 
+    public static final RegistryKey<Enchantment> SMELTING =
+            RegistryKey.of(RegistryKeys.ENCHANTMENT, Identifier.of(VanillaPlusMod.MOD_ID, "smelting"));
+
     public static void initialize() {}
 }
