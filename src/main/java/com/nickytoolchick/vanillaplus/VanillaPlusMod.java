@@ -6,6 +6,7 @@ import com.nickytoolchick.vanillaplus.enchantment.ModEnchantments;
 import com.nickytoolchick.vanillaplus.event.TreeCapitatorEvent;
 import com.nickytoolchick.vanillaplus.item.ModItems;
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.registry.CompostingChanceRegistry;
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import org.slf4j.Logger;
@@ -33,5 +34,8 @@ public class VanillaPlusMod implements ModInitializer {
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_APPLE_WOOD, 5, 5);
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.APPLE_PLANKS, 5, 20);
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.APPLE_LEAVES, 30, 60);
+
+		CompostingChanceRegistry.INSTANCE.add(ModItems.TOMATO, 0.5f);
+		CompostingChanceRegistry.INSTANCE.add(ModItems.TOMATO_SEEDS, 0.25f);
 	}
 }

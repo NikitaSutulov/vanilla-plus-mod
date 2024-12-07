@@ -2,6 +2,7 @@ package com.nickytoolchick.vanillaplus.block;
 
 import com.nickytoolchick.vanillaplus.VanillaPlusMod;
 import com.nickytoolchick.vanillaplus.block.clocks.*;
+import com.nickytoolchick.vanillaplus.block.crops.TomatoCropBlock;
 import com.nickytoolchick.vanillaplus.block.gates.*;
 import com.nickytoolchick.vanillaplus.world.ModConfiguredFeatures;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -130,6 +131,15 @@ public class ModBlocks {
                     AbstractBlock.Settings.copy(Blocks.OAK_SAPLING)
             )
     );
+
+    public static final Block TOMATO_CROP = registerBlockWithoutBlockItem("tomato_crop",
+            new TomatoCropBlock(AbstractBlock.Settings.create().noCollision()
+                    .ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP).pistonBehavior(PistonBehavior.DESTROY).mapColor(MapColor.DARK_GREEN)));
+
+
+    private static Block registerBlockWithoutBlockItem(String name, Block block) {
+        return Registry.register(Registries.BLOCK, Identifier.of(VanillaPlusMod.MOD_ID, name), block);
+    }
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

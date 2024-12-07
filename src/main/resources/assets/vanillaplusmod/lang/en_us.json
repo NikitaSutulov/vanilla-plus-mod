@@ -20,6 +20,7 @@
   "block.vanillaplusmod.stripped_apple_log": "Stripped Apple Log",
   "block.vanillaplusmod.stripped_apple_wood": "Stripped Apple Wood",
   "block.vanillaplusmod.apple_sapling": "Apple Sapling",
+  "block.vanillaplusmod.tomato_crop": "Tomato Crop",
   "item.vanillaplusmod.wooden_dagger": "Wooden Dagger",
   "item.vanillaplusmod.stone_dagger": "Stone Dagger",
   "item.vanillaplusmod.golden_dagger": "Golden Dagger",
@@ -27,6 +28,21 @@
   "item.vanillaplusmod.diamond_dagger": "Diamond Dagger",
   "item.vanillaplusmod.netherite_dagger": "Netherite Dagger",
   "item.vanillaplusmod.fireball_launcher": "Fireball Launcher",
+  "item.vanillaplusmod.flour": "Flour",
+  "item.vanillaplusmod.dough": "Dough",
+  "item.vanillaplusmod.raw_beetroot_soup": "Raw Beetroot Soup",
+  "item.vanillaplusmod.raw_bread": "Raw Bread",
+  "item.vanillaplusmod.raw_cake": "Raw Cake",
+  "item.vanillaplusmod.raw_cookie": "Raw Cookie",
+  "item.vanillaplusmod.raw_mushroom_stew": "Raw Mushroom Stew",
+  "item.vanillaplusmod.raw_pumpkin_pie": "Raw Pumpkin Pie",
+  "item.vanillaplusmod.tomato_seeds": "Tomato Seeds",
+  "item.vanillaplusmod.tomato": "Tomato",
+  "item.vanillaplusmod.baked_tomato": "Baked Tomato",
+  "item.vanillaplusmod.tomato_soup": "Tomato Soup",
+  "item.vanillaplusmod.raw_tomato_soup": "Raw Tomato Soup",
   "enchantment.vanillaplusmod.tree_capitator": "Tree Capitator",
   "enchantment.vanillaplusmod.smelting": "Smelting"
+
+  
 }

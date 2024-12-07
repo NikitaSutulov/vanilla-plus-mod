@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "F": {
+      "item": "vanillaplusmod:flour"
+    },
+    "B": {
+      "item": "minecraft:water_bucket"
+    }
+  },
+  "pattern": [
+    "F",
+    "B"
+  ],
+  "result": {
+    "count": 1,
+    "id": "vanillaplusmod:dough"
+  }
+}
