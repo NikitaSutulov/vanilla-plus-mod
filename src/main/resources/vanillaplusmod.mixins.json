@@ -3,7 +3,12 @@
 	"package": "com.nickytoolchick.vanillaplus.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-		"ExampleMixin"
+		"ExampleMixin",
+		"BabySkeletonMixin",
+		"BabyWitherSkeletonMixin",
+		"BabyEndermanMixin",
+		"BabySpiderMixin",
+		"BabyWitchMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
