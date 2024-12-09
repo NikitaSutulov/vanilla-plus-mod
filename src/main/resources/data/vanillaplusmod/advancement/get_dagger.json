@@ -1,0 +1,33 @@
+{
+  "parent": "vanillaplusmod:vanillaplusmod",
+  "criteria": {
+    "dagger": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#vanillaplusmod:daggers"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.vanillaplusmod.get_dagger.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "vanillaplusmod:netherite_dagger"
+    },
+    "title": {
+      "translate": "advancement.vanillaplusmod.get_dagger.title"
+    }
+  },
+  "requirements": [
+    [
+      "dagger"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

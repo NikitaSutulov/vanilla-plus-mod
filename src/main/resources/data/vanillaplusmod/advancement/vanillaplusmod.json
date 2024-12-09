@@ -1,0 +1,35 @@
+{
+  "criteria": {
+    "apple_log": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanillaplusmod:apple_log"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "background": "vanillaplusmod:textures/block/apple_log.png",
+    "description": {
+      "translate": "advancement.vanillaplusmod.root.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "vanillaplusmod:apple_log"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancement.vanillaplusmod.root.title"
+    }
+  },
+  "requirements": [
+    [
+      "apple_log"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

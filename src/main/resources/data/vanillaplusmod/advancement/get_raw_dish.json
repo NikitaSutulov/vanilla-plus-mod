@@ -1,0 +1,33 @@
+{
+  "parent": "vanillaplusmod:get_dough",
+  "criteria": {
+    "raw_dish": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#vanillaplusmod:raw_dishes"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.vanillaplusmod.get_raw_dish.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "vanillaplusmod:raw_pumpkin_pie"
+    },
+    "title": {
+      "translate": "advancement.vanillaplusmod.get_raw_dish.title"
+    }
+  },
+  "requirements": [
+    [
+      "raw_dish"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,33 @@
+{
+  "parent": "vanillaplusmod:vanillaplusmod",
+  "criteria": {
+    "new_redstone_component": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#vanillaplusmod:new_redstone_components"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.vanillaplusmod.get_new_redstone_component.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "vanillaplusmod:not_gate_block"
+    },
+    "title": {
+      "translate": "advancement.vanillaplusmod.get_new_redstone_component.title"
+    }
+  },
+  "requirements": [
+    [
+      "new_redstone_component"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

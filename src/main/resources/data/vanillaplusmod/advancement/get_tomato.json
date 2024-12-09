@@ -1,0 +1,33 @@
+{
+  "parent": "vanillaplusmod:get_tomato_seeds",
+  "criteria": {
+    "tomato": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanillaplusmod:tomato"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.vanillaplusmod.get_tomato.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "vanillaplusmod:tomato"
+    },
+    "title": {
+      "translate": "advancement.vanillaplusmod.get_tomato.title"
+    }
+  },
+  "requirements": [
+    [
+      "tomato"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

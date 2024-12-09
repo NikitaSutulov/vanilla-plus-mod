@@ -1,0 +1,33 @@
+{
+  "parent": "vanillaplusmod:vanillaplusmod",
+  "criteria": {
+    "fireball_launcher": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanillaplusmod:fireball_launcher"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.vanillaplusmod.get_fireball_launcher.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "vanillaplusmod:fireball_launcher"
+    },
+    "title": {
+      "translate": "advancement.vanillaplusmod.get_fireball_launcher.title"
+    }
+  },
+  "requirements": [
+    [
+      "fireball_launcher"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,43 @@
+{
+  "parent": "vanillaplusmod:vanillaplusmod",
+  "criteria": {
+    "tree_capitator_axe": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#vanillaplusmod:non_wooden_axes",
+            "predicates": {
+              "enchantments": [
+                {
+                  "enchantments": "vanillaplusmod:tree_capitator",
+                  "levels": {
+                    "min": 1
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.vanillaplusmod.get_tree_capitator_axe.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "minecraft:netherite_axe"
+    },
+    "title": {
+      "translate": "advancement.vanillaplusmod.get_tree_capitator_axe.title"
+    }
+  },
+  "requirements": [
+    [
+      "tree_capitator_axe"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

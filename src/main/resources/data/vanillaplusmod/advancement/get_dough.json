@@ -1,0 +1,33 @@
+{
+  "parent": "vanillaplusmod:get_flour",
+  "criteria": {
+    "dough": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanillaplusmod:dough"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.vanillaplusmod.get_dough.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "vanillaplusmod:dough"
+    },
+    "title": {
+      "translate": "advancement.vanillaplusmod.get_dough.title"
+    }
+  },
+  "requirements": [
+    [
+      "dough"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

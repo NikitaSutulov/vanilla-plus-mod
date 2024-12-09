@@ -1,0 +1,33 @@
+{
+  "parent": "vanillaplusmod:get_raw_dish",
+  "criteria": {
+    "baked_dish": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#vanillaplusmod:baked_dishes"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.vanillaplusmod.get_baked_dish.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "minecraft:cake"
+    },
+    "title": {
+      "translate": "advancement.vanillaplusmod.get_baked_dish.title"
+    }
+  },
+  "requirements": [
+    [
+      "baked_dish"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

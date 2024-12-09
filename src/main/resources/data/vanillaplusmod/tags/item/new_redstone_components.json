@@ -1,0 +1,18 @@
+{
+  "values": [
+    "vanillaplusmod:and_gate_with_three_inputs_block",
+    "vanillaplusmod:and_gate_with_two_inputs_block",
+    "vanillaplusmod:nand_gate_with_three_inputs_block",
+    "vanillaplusmod:nand_gate_with_two_inputs_block",
+    "vanillaplusmod:nor_gate_with_three_inputs_block",
+    "vanillaplusmod:nor_gate_with_two_inputs_block",
+    "vanillaplusmod:not_gate_block",
+    "vanillaplusmod:or_gate_with_three_inputs_block",
+    "vanillaplusmod:or_gate_with_two_inputs_block",
+    "vanillaplusmod:xnor_gate_with_three_inputs_block",
+    "vanillaplusmod:xnor_gate_with_two_inputs_block",
+    "vanillaplusmod:xor_gate_with_three_inputs_block",
+    "vanillaplusmod:xor_gate_with_two_inputs_block",
+    "vanillaplusmod:redstone_clock_block"
+  ]
+}

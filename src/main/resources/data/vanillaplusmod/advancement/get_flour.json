@@ -1,0 +1,33 @@
+{
+  "parent": "vanillaplusmod:vanillaplusmod",
+  "criteria": {
+    "flour": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanillaplusmod:flour"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.vanillaplusmod.get_flour.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "vanillaplusmod:flour"
+    },
+    "title": {
+      "translate": "advancement.vanillaplusmod.get_flour.title"
+    }
+  },
+  "requirements": [
+    [
+      "flour"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,43 @@
+{
+  "parent": "vanillaplusmod:vanillaplusmod",
+  "criteria": {
+    "smelting_pickaxe": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#vanillaplusmod:non_wooden_pickaxes",
+            "predicates": {
+              "enchantments": [
+                {
+                  "enchantments": "vanillaplusmod:smelting",
+                  "levels": {
+                    "min": 1
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.vanillaplusmod.get_smelting_pickaxe.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "minecraft:netherite_pickaxe"
+    },
+    "title": {
+      "translate": "advancement.vanillaplusmod.get_smelting_pickaxe.title"
+    }
+  },
+  "requirements": [
+    [
+      "smelting_pickaxe"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

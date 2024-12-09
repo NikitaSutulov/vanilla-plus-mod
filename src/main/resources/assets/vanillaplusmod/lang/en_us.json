@@ -42,7 +42,30 @@
   "item.vanillaplusmod.tomato_soup": "Tomato Soup",
   "item.vanillaplusmod.raw_tomato_soup": "Raw Tomato Soup",
   "enchantment.vanillaplusmod.tree_capitator": "Tree Capitator",
-  "enchantment.vanillaplusmod.smelting": "Smelting"
+  "enchantment.vanillaplusmod.smelting": "Smelting",
+  "advancement.vanillaplusmod.root.title": "Vanilla Plus!",
+  "advancement.vanillaplusmod.root.description": "Cut apple tree and get Apple Log",
+  "advancement.vanillaplusmod.get_flour.title": "Get Flour!",
+  "advancement.vanillaplusmod.get_flour.description": "Craft Flour from Wheat",
+  "advancement.vanillaplusmod.get_dough.title": "Get Dough!",
+  "advancement.vanillaplusmod.get_dough.description": "Craft Dough from Flour and water",
+  "advancement.vanillaplusmod.get_raw_dish.title": "Almost Done!",
+  "advancement.vanillaplusmod.get_raw_dish.description": "Craft a raw form of any bakery or soup",
+  "advancement.vanillaplusmod.get_baked_dish.title": "A pakhne yak!",
+  "advancement.vanillaplusmod.get_baked_dish.description": "Bake your raw dish in the furnace",
+  "advancement.vanillaplusmod.get_tomato_seeds.title": "The forgotten fruit",
+  "advancement.vanillaplusmod.get_tomato_seeds.description": "Get Tomato Seeds from breaking Tall Grass",
+  "advancement.vanillaplusmod.get_tomato.title": "Senior Pomidor",
+  "advancement.vanillaplusmod.get_tomato.description": "Successfully grow Tomato",
+  "advancement.vanillaplusmod.get_dagger.title": "Et tu, Brute?",
+  "advancement.vanillaplusmod.get_dagger.description": "Craft a dagger",
+  "advancement.vanillaplusmod.get_fireball_launcher.title": "I Smell Democracy!",
+  "advancement.vanillaplusmod.get_fireball_launcher.description": "Craft Fireball Launcher",
+  "advancement.vanillaplusmod.get_new_redstone_component.title": "Redstone Nerd",
+  "advancement.vanillaplusmod.get_new_redstone_component.description": "Craft any of the new redstone components",
+  "advancement.vanillaplusmod.get_smelting_pickaxe.title": "Pro Miner",
+  "advancement.vanillaplusmod.get_smelting_pickaxe.description": "Enchant your pickaxe with Smelting",
+  "advancement.vanillaplusmod.get_tree_capitator_axe.title": "Lumber Jack",
+  "advancement.vanillaplusmod.get_tree_capitator_axe.description": "Enchant your axe with Tree Capitator"
 
-  
 }
