@@ -3,13 +3,13 @@
 	"id": "vanillaplusmod",
 	"version": "${version}",
 	"name": "Vanilla Plus Mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "A Minecraft mod that adds more features to the game without ruining vanilla vibe.",
 	"authors": [
-		"Me!"
+		"Nikita Sutulov"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://github.com/NikitaSutulov/vanilla-plus-mod",
+		"sources": "https://github.com/NikitaSutulov/vanilla-plus-mod"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/vanillaplusmod/icon.png",
